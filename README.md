@@ -216,7 +216,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
      SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY),CITY ASC LIMIT 1;
      SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC LIMIT 1;
 
-## 12. Weather Observation Station 9
+## 13. Weather Observation Station 9
 
 Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
 
@@ -236,5 +236,5 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ### Solution :
      SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[^aeiou]";
-     OR
+     (OR) We can use below query also for this question
      SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[bcdfghjklmnpqrstvwxyz]";
