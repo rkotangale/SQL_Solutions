@@ -236,5 +236,7 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ### Solution :
      SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[^aeiou]";
+     
      (OR) We can use below query also for this question
+     
      SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[bcdfghjklmnpqrstvwxyz]";
