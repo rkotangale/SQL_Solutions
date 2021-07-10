@@ -153,7 +153,7 @@ The STATION table is described as follows:
 
 where LAT_N is the northern latitude and LONG_W is the western longitude.
 
-### Solution
+### Solution :
      SELECT COUNT(CITY)- COUNT(DISTINCT CITY) FROM STATION;
 
 ## 10. Employee Salaries
