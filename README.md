@@ -175,3 +175,23 @@ where employee_id is an employee's ID number, name is their name, months is the 
 
 ### Solution :
      SELECT name FROM Employee WHERE salary>2000 AND months<10 ORDER BY employee_id ASC;
+     
+## 11. Employee Names
+
+Write a query that prints a list of employee names (i.e.: the name attribute) from the Employee table in alphabetical order.
+
+Input Format
+
+The Employee table containing employee data for a company is described as follows:
+
+| Column      | Type    |
+|-------------|---------|
+| Employee_id | Integer |
+| name        | String  |
+| months      | Integer |
+| salary      | Integer |
+
+where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their monthly salary.
+
+### Solution :
+     SELECT name FROM Employee ORDER BY name ASC;
