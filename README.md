@@ -215,3 +215,26 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 ### Solution :
      SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY),CITY ASC LIMIT 1;
      SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC LIMIT 1;
+
+## 12. Weather Observation Station 9
+
+Query the list of CITY names from STATION that do not start with vowels. Your result cannot contain duplicates.
+
+Input Format
+
+The STATION table is described as follows:
+
+| FIELD | TYPE |
+| --- | --- |
+| ID     | NUMBER |
+| CITY   | VARCHAR(21) |
+| STATE  | VARCHAR(2) |
+| LAT_N  | NUMBER |
+| LONG_W | NUMBER |
+
+where LAT_N is the northern latitude and LONG_W is the western longitude.
+
+### Solution :
+     SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[^aeiou]";
+     OR
+     SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[bcdfghjklmnpqrstvwxyz]";
