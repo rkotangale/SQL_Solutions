@@ -369,3 +369,22 @@ where LAT_N is the northern latitude and LONG_W is the western longitude.
 
 ### Solution :
      SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[^aeiou]" AND CITY REGEXP "[^aeiou]$";
+
+## 20. Japan Population
+
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+
+Input Format
+
+The CITY table is described as follows:
+
+| FIELD | TYPE |
+| --- | --- |
+| ID     | NUMBER |
+| NAME   | VARCHAR(17) |
+| COUNTRYCODE  | VARCHAR(3) |
+| DISTRICT  | VARCHAR(20) |
+| POPULATION | NUMBER |
+
+### Solution :
+     SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE="JPN";
