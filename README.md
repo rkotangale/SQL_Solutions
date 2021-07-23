@@ -414,3 +414,22 @@ Query the Name of any student in STUDENTS who scored higher than  Marks. Order y
 
 ### Solution :
      SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY RIGHT(NAME, 3), ID ASC;
+
+## 23. Revising Aggregations - The Sum Function
+
+Query the total population of all cities in CITY where District is California.
+
+Input Format
+
+The CITY table is described as follows:
+
+| FIELD | TYPE |
+| --- | --- |
+| ID     | NUMBER |
+| NAME   | VARCHAR(17) |
+| COUNTRYCODE  | VARCHAR(3) |
+| DISTRICT  | VARCHAR(20) |
+| POPULATION | NUMBER |
+
+### Solution :
+     SELECT SUM(POPULATION) FROM CITY WHERE DISTRICT="California";
