@@ -471,3 +471,22 @@ The CITY table is described as follows:
 
 ### Solution :
      SELECT ROUND(AVG(POPULATION)) FROM CITY;
+
+## 26. Revising Aggregations - The Count Function
+
+Query a count of the number of cities in CITY having a Population larger than 100,000.
+
+Input Format
+
+The CITY table is described as follows:
+
+| FIELD | TYPE |
+| --- | --- |
+| ID     | NUMBER |
+| NAME   | VARCHAR(17) |
+| COUNTRYCODE  | VARCHAR(3) |
+| DISTRICT  | VARCHAR(20) |
+| POPULATION | NUMBER |
+
+### Solution :
+     SELECT COUNT(*) FROM CITY WHERE POPULATION>100000;
